@@ -1,5 +1,3 @@
-@props(['inputName', 'label' => null, 'type' => 'text', 'grid'])
-
 <div class="col-span-{{ $grid }}">
     @if ($label)
         <label for="{{ $inputName }}" class="block text-sm font-[600] text-[12px] text-[#6F7372] mb-[8px]">

@@ -72,14 +72,35 @@ php artisan migrate
 php artisan db:seed
 ```
 
-##  Observações
+8. **Inicie o servidor NodeJS:**
 
-Como esse teste pediu um CRUD completo foi necessário improvisar algumas telas como listagem de ativos, e fluxos como criar e editar ativos, a tela disponibilizada no figma foi: https://www.figma.com/design/y6r0zw2ZNd6AnyrEWCLBop/Projeto-Teste?node-id=4034-10422&t=WDNVuVjVnf3muxNK-0
-Com base na tela fornecida foram criados os fluxos e telas adicionais.
+```bash
+npm run dev
+```
 
-Também improvisei uma lista para listagem de ativos com base no material encontrado em:https://www.figma.com/design/y6r0zw2ZNd6AnyrEWCLBop/Projeto-Teste?node-id=3729-3467&t=2jNSv1ndcDcazJA7-0
+8. **Inicie o servidor Laravel:**
+
+```bash
+php artisan serve
+```
+
+9. **Inicie o MYSQL e o APACHE no Xampp e acesse http://127.0.0.1:8000**
+
+## 🧐 Observações
+
+Como esse teste pediu um CRUD completo foi necessário improvisar algumas telas como listagem de ativos, e fluxos como criar e editar ativos, a tela disponibilizada no figma foi essa [aqui](https://www.figma.com/design/y6r0zw2ZNd6AnyrEWCLBop/Projeto-Teste?node-id=4034-10422&t=WDNVuVjVnf3muxNK-0) e com base na tela fornecida foram criados os fluxos e telas adicionais.
+
+Também improvisei uma lista para listagem de ativos com base no material encontrado [aqui](https://www.figma.com/design/y6r0zw2ZNd6AnyrEWCLBop/Projeto-Teste?node-id=3729-3467&t=2jNSv1ndcDcazJA7-0)
 
 Para melhor avaliação do design recomendo a tela de update: http://127.0.0.1:8000/1/update
 
-A descrição detalhada do teste envaido: https://github.com/gutembergsa/smartbiim-api/blob/main/INSTRUCTION.md
+A descrição detalhada do teste recebido: https://github.com/gutembergsa/smartbiim-api/blob/main/INSTRUCTION.md
+
+Uma api também esta disponível em http://127.0.0.1:8000:
+GET /resource
+GET /resource/{id}
+POST /resource
+PUT /resource/{id}
+DELETE /resource/{id}
+
 

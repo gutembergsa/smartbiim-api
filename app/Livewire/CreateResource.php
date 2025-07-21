@@ -3,9 +3,7 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-use Illuminate\Support\Facades\Log;
 use App\Livewire\Forms\ResourceForm;
-use Illuminate\Support\Facades\DB;
 use App\Models\Resource;
 use Carbon\Carbon;
 

@@ -25,8 +25,6 @@ class ButtonIconComponent extends Component
         $this->icon = $icon;
         $this->height = $height;
         $this->width = $width;
-
-        
     }
 
 

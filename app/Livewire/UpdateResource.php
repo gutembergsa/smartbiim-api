@@ -7,7 +7,6 @@ use Livewire\Component;
 use App\Models\Resource;
 use App\Livewire\Forms\ResourceForm;
 use Illuminate\Support\Facades\Log;
-use Livewire\Attributes\Url;
 
 class UpdateResource extends Component
 {

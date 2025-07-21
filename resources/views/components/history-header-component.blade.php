@@ -1,5 +1,3 @@
-@props(['history'])
-
 <p class="text-[#838786] text-[12px] font-[400] my-[40px] flex items-center gap-x-[15px]">
     @foreach ($history as $historyData)
         <a href={{ $historyData['url'] }}> {{ $historyData['title'] }}</a> 

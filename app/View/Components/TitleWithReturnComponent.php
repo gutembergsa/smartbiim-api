@@ -17,7 +17,7 @@ class TitleWithReturnComponent extends Component
         $this->url = $url;
     }
 
-    public function render(): View|Closure|string
+    public function render()
     {
         return view('components.title-with-return-component');
     }
