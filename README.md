@@ -45,12 +45,10 @@ composer install
 npm install
 ```
 
-4. **Copie o conteudo de .env.example para o arquivo .env e configure as variáveis do banco**
+4. **Crie um arquivo .env na raiz do projeto e copie o conteudo de .env.example para o arquivo .env, depois configure as variáveis do banco**
 
 ```bash
-cp .env.example .env
-```
-```bash
+DB_CONNECTION=mysql
 DB_DATABASE=smartbiim
 DB_USERNAME=root
 DB_PASSWORD=
