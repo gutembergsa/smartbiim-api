@@ -104,4 +104,15 @@ PUT /resource/{id}
 DELETE /resource/{id}
 ```
 
+Body para POST e PUT:
+
+```
+{
+    "resource_name": "arquivo_4",
+    "manufacturer": "fabricante_4",
+    "model": "modelo_4",
+    "serial_number": "4",
+    "acquisition_date": "2025-07-16 23:47:30"
+}
+```
 
