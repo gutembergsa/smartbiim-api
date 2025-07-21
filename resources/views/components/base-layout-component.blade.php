@@ -50,7 +50,7 @@ use function Livewire\Volt\{state};
                         </span>
                     </div>
                     <div class="">
-                        <div class="bg-[#00050480] opacity-[50%]  w-[95%] h-[1px] m-auto  max-[900px]:w-[75%]"></div>
+                        <div class="bg-[#00050480] opacity-[50%]  w-[90%] h-[1px] m-auto  max-[900px]:w-[75%]"></div>
                         <div class="px-[15px] py-[10px] max-[900px]:py-[40px] max-[900px]:flex flex-col items-center justify-center">
 
                             <x-nav-group-component 
@@ -83,7 +83,7 @@ use function Livewire\Volt\{state};
                                 ]"
                             />
                         </div>
-                        <div class="bg-[#00050480] opacity-[50%]  w-[95%] h-[1px] m-auto max-[900px]:w-[75%]"></div>
+                        <div class="bg-[#00050480] opacity-[50%]  w-[90%] h-[1px] m-auto max-[900px]:w-[75%]"></div>
                     </div>
                     <div class="mt-[20px]"></div>
                     <div class="px-[15px] py-[10px]">

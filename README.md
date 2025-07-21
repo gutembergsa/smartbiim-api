@@ -1,9 +1,3 @@
-# 📦 Sistema de Gestão de Recursos
-
-Este projeto é um sistema completo de **CRUD** desenvolvido com **Laravel 11**, utilizando **Livewire 3.x**, **Alpine.js**, **Tailwind CSS** e **Vite**. A aplicação oferece uma interface moderna, responsiva e reativa para gerenciar recursos, além de fornecer uma API RESTful para integração.
-
----
-
 ## 🚀 Tecnologias Utilizadas
 
 - Laravel 11
@@ -33,8 +27,8 @@ Antes de começar, certifique-se de ter instalado:
 1. **Clone o projeto:**
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/gutembergsa/smartbiim-api.git
+cd smartbiim-api
 ```
 
 2. **Instale as dependências PHP:**
@@ -77,3 +71,15 @@ php artisan migrate
 ```bash
 php artisan db:seed
 ```
+
+##  Observações
+
+Como esse teste pediu um CRUD completo foi necessário improvisar algumas telas como listagem de ativos, e fluxos como criar e editar ativos, a tela disponibilizada no figma foi: https://www.figma.com/design/y6r0zw2ZNd6AnyrEWCLBop/Projeto-Teste?node-id=4034-10422&t=WDNVuVjVnf3muxNK-0
+Com base na tela fornecida foram criados os fluxos e telas adicionais.
+
+Também improvisei uma lista para listagem de ativos com base no material encontrado em:https://www.figma.com/design/y6r0zw2ZNd6AnyrEWCLBop/Projeto-Teste?node-id=3729-3467&t=2jNSv1ndcDcazJA7-0
+
+Para melhor avaliação do design recomendo a tela de update: http://127.0.0.1:8000/1/update
+
+A descrição detalhada do teste envaido: https://github.com/gutembergsa/smartbiim-api/blob/main/INSTRUCTION.md
+
