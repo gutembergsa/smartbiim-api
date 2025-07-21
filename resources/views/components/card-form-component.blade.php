@@ -1,4 +1,4 @@
-<div x-data="{ expanded: false }" class="max-w-[568px] w-full px-[24px] py-[16px] bg-white border-1 border-[#C5E2FD] rounded-[10px]">
+<div x-data="{ expanded: false }" class="max-w-[568px] w-full px-[24px] py-[16px] bg-white border-1 border-[#C5E2FD] rounded-[10px] max-[900px]:max-w-unset max-[900px]:w-auto">
     <div class="flex justify-between">
         <p class="text-[16px] font-[700] text-[#6F7372]">{{ $title }}</p>
         <div :class="{ 'rotate-180': expanded }">

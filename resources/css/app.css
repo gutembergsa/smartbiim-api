@@ -1,6 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
 
 @font-face {
     font-family: OptimusPrinceps;
@@ -22,7 +24,13 @@ input, input::placeholder, input:disabled {
     font-family: OptimusPrinceps;
     color: #00050480;
     text-indent: 15px;
+    padding: 0px;
 }
+input[type="text" I] {
+    padding-block: 0px !important;
+    padding-inline: 0px !important;
+}
+
 input:disabled {
     color: #6F7372;
 }

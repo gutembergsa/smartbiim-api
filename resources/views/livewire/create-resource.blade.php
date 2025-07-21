@@ -14,21 +14,26 @@
         placeholder="Digite aqui"
         wire:model.live="form.manufacturer"
     />
-    <x-input-component
-        :grid="1"
-        label="Modelo"
-        inputName="model"
-        placeholder="Digite aqui"
-        wire:model.live="form.model"
-    />
-    <x-input-component
-        :grid="1"
-        label="Número de Série"
-        type="number"
-        inputName="serial_number"
-        placeholder="Digite aqui"
-        wire:model.live="form.serial_number"
-    />
+    <div class="col-span-1 max-[768px]:col-span-2">
+        <x-input-component
+            :grid="2"
+            inputName="model"
+            label="Modelo"        
+            placeholder="Digite aqui"        
+            wire:model="form.model"
+        />
+    </div>
+
+    <div class="col-span-1 max-[768px]:col-span-2">
+        <x-input-component
+            :grid="2"
+            type="number"
+            label="Número de Série"
+            inputName="serial_number"
+            placeholder="Digite aqui"
+            wire:model="form.serial_number"
+        />
+    </div>
     <div class="col-span-2 relative" @click="$refs.acquisitionInput.showPicker()()">
         <x-input-component
             :grid="2"
@@ -40,7 +45,7 @@
             wire:model.live="form.acquisition_date"
             x-ref="acquisitionInput"
         />
-        <span class="absolute top-[34px] left-[15px] text-[#00050480]">{{strlen($form->acquisition_date) ? str_replace('-', '/', $form->acquisition_date) : "Digite aqui" }}</span>
+        <span class="absolute top-[34px] left-[15px] text-[14px] text-[#00050480]">{{strlen($form->acquisition_date) ? str_replace('-', '/', $form->acquisition_date) : "Digite aqui" }}</span>
     </div>
     <div class="col-span-2">
         <x-button-component icon="arrow-right.png" type="submit" text="Avançar" :width="14" :height="14" />

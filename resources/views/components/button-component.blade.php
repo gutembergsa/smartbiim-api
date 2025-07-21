@@ -1,5 +1,4 @@
 @php
-    $spanClass = $icon ? 'align-super' : '';
     $style =  "w-[95px] h-[28px] rounded-[3px] text-[12px] font-semibold " .  ($outlined ? "bg-[#FFF] border-[#388DDD] text-[#388DDD]" : "text-[#F0F8FF] bg-[#388DDD]")
 @endphp
 <button 

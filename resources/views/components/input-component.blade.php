@@ -12,7 +12,7 @@
         id="{{ $inputName }}"
         name="{{ $inputName }}"
         {{ $attributes->merge([
-            'class' => 'w-full h-[40px] px-3 py-2 border-1 border-[#00050480] rounded-[3.5px] bg-[#FAFAFA] disabled:bg-[#C5C7C6] placeholder:text-[14px] placeholder:font-[400]'
+            'class' => 'w-full h-[40px] border-1 border-[#00050480] rounded-[3.5px] bg-[#FAFAFA] disabled:bg-[#C5C7C6] placeholder:text-[14px] placeholder:font-[400]'
         ]) }}
     />
 

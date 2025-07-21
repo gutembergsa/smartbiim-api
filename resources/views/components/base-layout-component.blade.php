@@ -11,8 +11,9 @@ use function Livewire\Volt\{state};
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        @vite('resources/css/app.css')
 
-        <title>Laravel</title>
+        <title>Sentinel</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -28,20 +29,30 @@ use function Livewire\Volt\{state};
         @endif
         @livewireStyles
     </head>
-    <body class="font-sans antialiased dark:bg-black dark:text-white/50 bg-white">
+    <body 
+        class="font-sans antialiased dark:bg-black dark:text-white/50 bg-white" 
+        x-data="{ width: window.innerWidth, height: window.innerHeight }" 
+        x-init="
+            window.addEventListener('resize', () => {
+                width = window.innerWidth
+                height = window.innerHeight
+            });
+        "
+    >
         <main class="h-screen w-full bg-white flex relative">
-                <nav class="max-w-[232px] w-full bg-[#FAFAFA]">
-                    <div class="flex items-center gap-[20px] px-[15px] pt-[10px]">
+                <nav class="max-w-[232px] w-full bg-[#FAFAFA] max-[900px]:max-w-[88px]">
+                    <div class="flex items-center gap-[16px] px-[15px] py-[50px] relative">
                         <img src="{{ asset('images/logo-img.png') }}" alt="logo">
-                        <img src="{{ asset('images/logo-text.png') }}" alt="">
+                        <img class="max-[900px]:hidden" src="{{ asset('images/logo-text.png') }}" alt="">
 
-                        <span class="flex justify-center items-center bg-[#FFFFFF] w-[24px] h-[24px] shadow-[0px_0px_8px_0px_#1049DD26]">
-                            <img class="w-[12px] h-[12px] align-middle" src="{{ asset('icons/logout-icon.png') }}" alt="">
+                        <span class="flex items-center justify-center bg-[#FFFFFF] w-[24px] h-[24px] rounded-[4px] shadow-[0px_0px_8px_0px_#1049DD26] cursor-pointer max-[900px]:absolute max-[900px]:right-[-12px]">
+                            <img class="w-[162x] h-[162x] align-middle max-[900px]:rotate-[180deg]" src="{{ asset('icons/logout-icon.png') }}" alt="">
                         </span>
                     </div>
-                    <div class="mt-[40px] ">
-                        <div class="bg-[#00050480] opacity-[50%]  w-[95%] h-[1px] m-auto "></div>
-                        <div class="px-[15px] py-[10px]">
+                    <div class="">
+                        <div class="bg-[#00050480] opacity-[50%]  w-[95%] h-[1px] m-auto  max-[900px]:w-[75%]"></div>
+                        <div class="px-[15px] py-[10px] max-[900px]:py-[40px] max-[900px]:flex flex-col items-center justify-center">
+
                             <x-nav-group-component 
                                 :title="''" 
                                 :items="[
@@ -72,7 +83,7 @@ use function Livewire\Volt\{state};
                                 ]"
                             />
                         </div>
-                        <div class="bg-[#00050480] opacity-[50%]  w-[95%] h-[1px] m-auto"></div>
+                        <div class="bg-[#00050480] opacity-[50%]  w-[95%] h-[1px] m-auto max-[900px]:w-[75%]"></div>
                     </div>
                     <div class="mt-[20px]"></div>
                     <div class="px-[15px] py-[10px]">
@@ -82,15 +93,13 @@ use function Livewire\Volt\{state};
                                 ['text' => 'Ajuda', 'icon' => 'question-icon.png'],
                             ]"
                         />
-                        <div class="flex items-center gap-[10px]">
+                        <div class="flex items-center gap-[10px] max-[900px]:hidden">
                             <img class="w-[40px] h-[40px]" src="{{ asset('images/user-img.png') }}" alt="user">
                             <div class="w-[111px]">
                                 <p class="text-[14px] text-[#6F7372] font-[600]">Ana Carolina O.</p>
                                 <p class="text-[10px] text-[#6F7372] font-[400]">Adm. Sistema</p>
                             </div>
                             <img class="w-[8px] h-[4px]"  src="{{ asset('icons/vetor-boxes-icon.png') }}" alt="arrow">
-
-
                         </div>
                     </div>
                 </nav>
