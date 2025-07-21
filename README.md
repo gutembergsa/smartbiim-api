@@ -88,7 +88,7 @@ php artisan serve
 
 9. Inicie o MYSQL e o APACHE no Xampp e acesse http://127.0.0.1:8000
 
-## 🧐 Observações <a name="look"/>](#list)
+## 🧐 Observações [<a name="look"/>](#list)
 Como esse teste pediu um CRUD completo foi necessário improvisar algumas telas como listagem de ativos e fluxos como criar e editar ativos, a tela disponibilizada no figma foi essa [aqui](https://www.figma.com/design/y6r0zw2ZNd6AnyrEWCLBop/Projeto-Teste?node-id=4034-10422&t=WDNVuVjVnf3muxNK-0) e com base na tela fornecida foram criados os fluxos e telas adicionais.
 
 Também improvisei uma listagem de ativos com base no material encontrado [aqui](https://www.figma.com/design/y6r0zw2ZNd6AnyrEWCLBop/Projeto-Teste?node-id=3729-3467&t=2jNSv1ndcDcazJA7-0)
