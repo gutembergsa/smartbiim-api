@@ -3,13 +3,13 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
+use App\Models\Resource;
 
 class ResourceSeeder extends Seeder
 {
     public function run(): void
     {
-        DB::table('resources')->insert([
+        Resource::create([
             'resource_name' => 'arquivo_1',
             'manufacturer' => 'fabricante_1',
             'model' => 'modelo_1',
@@ -17,7 +17,7 @@ class ResourceSeeder extends Seeder
             'acquisition_date'  => now(),
         ]);
     
-        DB::table('resources')->insert([
+        Resource::create([
             'resource_name' => 'arquivo_2',
             'manufacturer' => 'fabricante_2',
             'model' => 'modelo_2',
