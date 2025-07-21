@@ -45,13 +45,13 @@ composer install
 npm install
 ```
 
-4. **Copie o conteudo de .env.example para o arquivo .env e configure o banco**
+4. **Copie o conteudo de .env.example para o arquivo .env e configure as variáveis do banco**
 
 ```bash
 cp .env.example .env
 ```
 ```bash
-DB_DATABASE=nome_do_banco
+DB_DATABASE=smartbiim
 DB_USERNAME=root
 DB_PASSWORD=
 ```
