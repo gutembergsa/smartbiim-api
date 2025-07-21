@@ -63,6 +63,7 @@ php artisan key:generate
 6. **Execute as migrations:**
 
 ```bash
+php artisan session:table
 php artisan migrate
 ```
 
