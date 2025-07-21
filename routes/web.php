@@ -1,8 +1,8 @@
 <?php
 
-use App\Http\Controllers\Api\ResourceController;
+use App\Http\Controllers\ResourceViewController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [ResourceController::class, 'list'])->name('resources.list');
-Route::get('/{id}/update', [ResourceController::class, 'update'])->name('resources.update');
-Route::get('/create', [ResourceController::class, 'create'])->name('resources.create');
+Route::get('/', [ResourceViewController::class, 'listView'])->name('resources.list');
+Route::get('/{id}/update', [ResourceViewController::class, 'updateView'])->name('resources.update');
+Route::get('/create', [ResourceViewController::class, 'createView'])->name('resources.create');

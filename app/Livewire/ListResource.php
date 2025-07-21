@@ -4,7 +4,6 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\Resource;
-use Illuminate\Support\Facades\Log;
 
 class ListResource extends Component
 {

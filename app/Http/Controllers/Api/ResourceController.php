@@ -9,27 +9,6 @@ use Illuminate\Support\Facades\DB;
 
 class ResourceController extends Controller
 {
-
-    public function index() {
-        return view('resources.index');
-    }
-
-    public function list() {
-        return view('resources.list');
-    }
-
-    public function create() {
-        return view('resources.create');
-    }
-
-
-    public function update($resourceID) {
-        return view('resources.update', [
-            'id' => $resourceID
-        ]);
-    }
-
-
     public function getAll() {
 
         $resource =  DB::table('resources')->get();
@@ -52,7 +31,7 @@ class ResourceController extends Controller
 
         $created =  DB::table('resources')
             ->insert([
-                "file_name" => $request->file_name,
+                "resource_name" => $request->resource_name,
                 "manufacturer" =>  $request->manufacturer,
                 "model" =>  $request->model,
                 "serial_number" =>  $request->serial_number,
@@ -69,7 +48,7 @@ class ResourceController extends Controller
         $updated =  DB::table('resources')
             ->where('id', $resourceID)
             ->update([
-                "file_name" => $request->file_name,
+                "resource_name" => $request->resource_name,
                 "manufacturer" =>  $request->manufacturer,
                 "model" =>  $request->model,
                 "serial_number" =>  $request->serial_number,
@@ -79,7 +58,7 @@ class ResourceController extends Controller
         return $updated;
     }
 
-    public function delete($resourceID) {
+    public function deleteByID($resourceID) {
 
         $deleted =  DB::table('resources')
             ->where('id', $resourceID)

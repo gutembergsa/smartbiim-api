@@ -14,7 +14,7 @@ class ResourceRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'file_name' => 'required',
+            'resource_name' => 'required',
             'manufacturer' => 'required',
             'model' => 'required',
             'serial_number' => 'required',
@@ -25,7 +25,7 @@ class ResourceRequest extends FormRequest
     public function messages(): array 
     {
         return[
-            'file_name.required' => 'Campo nome é obrigatório!',
+            'resource_name.required' => 'Campo nome é obrigatório!',
             'manufacturer.required' => 'Campo é obrigatório!',
             'model.required' => 'Campo é obrigatório!',
             'serial_number.required' => 'Campo é obrigatório!',
