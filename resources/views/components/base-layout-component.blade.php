@@ -103,7 +103,7 @@ use function Livewire\Volt\{state};
                         </div>
                     </div>
                 </nav>
-                <div class="w-full px-[35px]">
+                <div class="w-full px-[35px] max-[900px]:w-[calc(100vw-158px)]">
                     {{ $slot }}
                 </div>
         </main>

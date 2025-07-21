@@ -1,5 +1,5 @@
-<div class="text-[12px] mb-[10px] max-[900px]:mb-[0px] max-[900px]:not-last:mb-[60px] ">
-    <p class="mb-[25px] text-[#989C9B] font-[500] max-[900px]:hidden">
+<div class="text-[12px] mb-[30px] max-[900px]:mb-[0px] max-[900px]:not-last:mb-[60px] ">
+    <p class="mb-[15px] text-[#989C9B] font-[500] max-[900px]:hidden">
        {{ $title }}
     </p>
     <ul class="list-none">

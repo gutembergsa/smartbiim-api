@@ -1,7 +1,7 @@
 <div class="p-4" x-data="{ showModal: false, modalData: null }" wire:ignore.self>
-    <div class="flex justify-between mb-[40px]">
+    <div class="flex justify-between mb-[40px] w-full">
         <div class="flex flex-row justify-between items-center gap-[20px]">
-            <p class="text-[24px] font-[600] text-[#6F7372]">Ativos Cadastrados</p>
+            <p class="text-[24px] font-[600] text-[#6F7372] max-[900px]:text-[16px]">Ativos Cadastrados</p>
         </div>
         <a href="/create">
             <x-button-component                             
@@ -9,8 +9,8 @@
             />
         </a>
     </div>
-    <div class="w-full overflow-auto">
-        <table class="w-full border-collapse">
+    <div class="overflow-x-auto w-full max-w-full">
+        <table class="w-full border-collapse max-[900px]:w-[1000px] max-w-none">
             <tr class="bg-[#F0F8FF] h-[32px] pb-[40px]">
                 <th class="text-[12px] text-[#373A39] font-[500] pl-[10px] text-left">Nome do Ativo</th>
                 <th class="text-[12px] text-[#373A39] font-[500] text-left" >Fabricante</th>
@@ -44,7 +44,7 @@
             @endforeach
         </table>
     </div>
-    
+
     <div
         x-show="showModal"
         @click.outside="showModal = false"

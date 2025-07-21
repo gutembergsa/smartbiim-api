@@ -11,7 +11,6 @@ class CreateResource extends Component
 {
     public ResourceForm $form; 
 
-
     public function mount()
     {
         $this->form->acquisition_date = "";
@@ -25,14 +24,16 @@ class CreateResource extends Component
     public function save()
     {
         $this->validate();    
-
         $data = $this->form->all(); 
         $data['acquisition_date'] = Carbon::parse($data['acquisition_date']);
         $result = Resource::create($data);
-
-        toastr()->success('Recurso Salvo.', [], 'Sucesso');
-
-        return $result;
+        if ($result->id) {
+            toastr()->success('Recurso Salvo.', [], 'Sucesso');
+            $this->redirect('/'); 
+        }
+        else {
+            toastr()->error('Problema ao criar.', [], 'Ops');
+        }
     }
 
     public function render()

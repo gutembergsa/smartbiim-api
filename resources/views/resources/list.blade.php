@@ -8,7 +8,7 @@
 @endphp
 
 <x-base-layout-component>
-    <div class="w-full pr-[10px]">
+    <div class="w-full">
         <x-history-header-component :history="$history"/>
         <livewire:list-resource />  
     </div>

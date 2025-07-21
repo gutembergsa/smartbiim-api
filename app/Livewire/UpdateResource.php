@@ -6,7 +6,6 @@ use Carbon\Carbon;
 use Livewire\Component;
 use App\Models\Resource;
 use App\Livewire\Forms\ResourceForm;
-use Illuminate\Support\Facades\Log;
 
 class UpdateResource extends Component
 {
@@ -23,17 +22,17 @@ class UpdateResource extends Component
     public function save()
     {
         $this->validate();    
-
         $data = $this->form->all(); 
         $data['acquisition_date'] = Carbon::parse($data['acquisition_date']);
+        $result = $this->resource->update($data);
+        if ($result) {
+            toastr()->success('Recurso Atualizado.', [], 'Sucesso');
+            $this->redirect('/'); 
+        }
+        else {
+            toastr()->error('Probleam ao atualizar.', [], 'Ops');
+        }
 
-        Log::info($data);
-
-        $result =  $this->resource->update($data);
-
-        toastr()->success('Recurso Atualizado.', [], 'Sucesso');
-
-        return  $result;
     }
 
     public function render()

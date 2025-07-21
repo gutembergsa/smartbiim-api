@@ -3,14 +3,14 @@
         <x-input-component
             :grid="2"
             inputName="id_data"
-            label="Nome do Ativo"
+            label="ID"
             value="{{ $resource->id }}"
             disabled
         />
         <x-input-component
             :grid="2"
             inputName="resource_name"
-            label="ID"
+            label="Nome do Ativo"
             wire:model="form.resource_name"
         />
         <x-input-component

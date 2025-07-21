@@ -11,7 +11,6 @@ class Resource extends Model
     public $timestamps = false;
 
     protected $fillable = [
-        'id_data',
         'resource_name',
         'manufacturer',
         'model',
